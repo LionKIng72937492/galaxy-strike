@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<title>GALAXY STRIKE</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="wrap">
+  <div id="game">
+    <canvas id="c"></canvas>
+
+    <div id="hud">
+      <div class="l"><div id="score">0</div><div id="hi">HI 0</div></div>
+      <div class="m"><div id="combo"></div></div>
+      <div class="r"><div id="wave">WAVE 1</div><div id="lives"></div><button id="snd" aria-label="Sound">♪</button></div>
+    </div>
+
+    <div id="menu" class="screen show">
+      <h1>GALAXY STRIKE</h1>
+      <div class="sub">DEFEND THE GALAXY</div>
+      <button id="bPlay" class="btn">PLAY</button>
+      <button id="bUp" class="btn">UPGRADES</button>
+      <button id="bHow" class="btn">HOW TO PLAY</button>
+    </div>
+
+    <div id="how" class="screen">
+      <h2>HOW TO PLAY</h2>
+      <p>Bewege das Schiff mit Maus, Finger oder Pfeiltasten bzw. WASD. Es schießt automatisch.</p>
+      <p>Gegner dürfen die blaue Verteidigungslinie niemals überqueren. Jeder Durchbruch kostet ein Leben.</p>
+      <p>Schnelle Abschüsse erhöhen den Combo-Multiplikator. Zerstörte Gegner lassen Power-Ups fallen. Alle 5 Wellen erscheint ein Boss.</p>
+      <button class="btn back">BACK</button>
+    </div>
+
+    <div id="ups" class="screen">
+      <h2>UPGRADES</h2>
+      <div id="cred"></div>
+      <div id="upList"></div>
+      <button class="btn back">BACK</button>
+    </div>
+
+    <div id="over" class="screen">
+      <h2>GAME OVER</h2>
+      <div id="stats"></div>
+      <button id="again" class="btn">PLAY AGAIN</button>
+      <button id="toMenu" class="btn">MAIN MENU</button>
+    </div>
+  </div>
+</div>
+<script src="game.js"></script>
+</body>
+</html>
